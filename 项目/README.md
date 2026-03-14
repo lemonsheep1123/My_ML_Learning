@@ -1,14 +1,14 @@
-#Titanic Survived Prediction 第一版  
-1.简介  
+# Titanic Survived Prediction 第一版  
+## 1.简介  
 （采用KNN算法）该项目是基于kaggle的泰坦尼克号生存预测为背景下的一个机器学习小练手项目，可以作为机器学习新手步入kaggle学习的第一步。  
-2.核心特征工程  
+## 2.核心特征工程  
     1. 目标编码：对knn算法来说，距离是致命的问题，如果采用独热编码，只有0和1，会产生巨大误差，但是如果使用目标编码，用概率来代替编码，效果会好的多。  
     2. 平滑处理： 依照自顶向下设计，对目标编码的缺点进行补充就是平滑处理，有的column的分组会有小数据分组出现，故采用平滑处理来减小误差。  
     3. 特征缩放： 不用多说，这是knn的必经之路。  
-3.模型表现
+## 3.模型表现
     1.使用网格搜索，训练集准确率82.44%  
     2.测试集准确率76.53%  
-4.热力图  
+## 4.热力图  
 <img width="1189" height="1107" alt="Image" src="https://github.com/user-attachments/assets/43fb6ed3-98ea-47a3-b2ef-2d149903640c" />
-5.不足与展望  
+## 5.不足与展望  
     1.由于特种中塞入了ticket_counts_smooth、SibSp_Survived_smooth 和 Parch_Survived_Smooth，多重共线性特征，导致过拟合，下一步准备要整合特征。
