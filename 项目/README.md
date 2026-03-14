@@ -8,5 +8,7 @@
 3.模型表现
     1.使用网格搜索，训练集准确率82.44%  
     2.测试集准确率76.53%  
-4.不足与展望  
+4.热力图  
+<img width="1189" height="1107" alt="Image" src="https://github.com/user-attachments/assets/43fb6ed3-98ea-47a3-b2ef-2d149903640c" />
+5.不足与展望  
     1.由于特种中塞入了ticket_counts_smooth、SibSp_Survived_smooth 和 Parch_Survived_Smooth，多重共线性特征，导致过拟合，下一步准备要整合特征。
