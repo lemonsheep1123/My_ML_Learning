@@ -11,4 +11,10 @@
 ## 4.热力图  
 <img width="1189" height="1107" alt="Image" src="https://github.com/user-attachments/assets/43fb6ed3-98ea-47a3-b2ef-2d149903640c" />
 ## 5.不足与展望  
-    1.由于特种中塞入了ticket_counts_smooth、SibSp_Survived_smooth 和 Parch_Survived_Smooth，多重共线性特征，导致过拟合，下一步准备要整合特征。请期待下一版。
+    1.由于特种中塞入了ticket_counts_smooth、SibSp_Survived_smooth 和 Parch_Survived_Smooth，多重共线性特征，导致过拟合，下一步准备要整合特征。请期待下一版。  
+
+## Titanic Survived Prediction 第二版  
+    1. 相较上一版，我们这一次把冗余的特性合成一个新的特性，家人数量特性，这样就不会过拟合
+    2. 思考：相当于adc采样电路，给了是三个电路最后如果有一电路的一点出错，就会对结果造成极大影响，故我们可以讲数据整合，本次整合内容是，相加再加1，相当于整个家庭人数。
+    3. 训练集准确率81.18%
+    4. 测试集准确率80.04%
